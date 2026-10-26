@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DeviceDock — Support & Privacy</title>
+  <meta name="description" content="Support and privacy information for DeviceDock, the macOS menu-bar device manager.">
+  <style>
+    :root { color-scheme: dark; --bg:#0b0f19; --card:#151c2a; --text:#f7f8fb; --muted:#aeb8ca; --line:#293349; --accent:#7aa2ff; }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text",Inter,Arial,sans-serif; background:radial-gradient(circle at 80% 0,#182b51 0,transparent 34%),var(--bg); color:var(--text); line-height:1.6; }
+    main { width:min(920px,calc(100% - 40px)); margin:auto; padding:72px 0 96px; }
+    header { display:grid; grid-template-columns:88px 1fr; gap:24px; align-items:center; margin-bottom:52px; }
+    .icon { width:88px; height:88px; border-radius:22px; box-shadow:0 16px 45px #0008; }
+    h1 { margin:0; font-size:clamp(2.5rem,7vw,5rem); letter-spacing:-.055em; line-height:1; }
+    .tagline { margin:12px 0 0; color:var(--muted); font-size:1.15rem; }
+    nav { display:flex; flex-wrap:wrap; gap:10px; margin:0 0 32px; }
+    nav a,.button { color:var(--text); text-decoration:none; border:1px solid var(--line); border-radius:999px; padding:9px 16px; background:#ffffff0a; }
+    nav a:hover,.button:hover { border-color:var(--accent); }
+    section { padding:30px; margin:18px 0; border:1px solid var(--line); border-radius:22px; background:linear-gradient(145deg,#ffffff0a,#ffffff03); box-shadow:0 20px 60px #0003; }
+    h2 { margin:0 0 12px; font-size:1.55rem; }
+    h3 { margin:26px 0 6px; font-size:1.05rem; }
+    p,li { color:var(--muted); }
+    strong { color:var(--text); }
+    a { color:#a8c0ff; }
+    ul { padding-left:22px; }
+    footer { color:#77839a; font-size:.9rem; margin-top:34px; }
+    @media (max-width:600px) { main{padding-top:38px} header{grid-template-columns:64px 1fr}.icon{width:64px;height:64px;border-radius:16px}section{padding:22px} }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <div class="icon" role="img" aria-label="DeviceDock app icon" style="display:grid;place-items:center;background:linear-gradient(145deg,#7294ff,#7255dd)">
+        <svg viewBox="0 0 64 64" width="58" height="58" fill="none" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <rect x="8" y="18" width="29" height="34" rx="9"/><rect x="26" y="10" width="30" height="32" rx="9"/><circle cx="49" cy="17" r="3" fill="white" stroke="none"/>
+        </svg>
+      </div>
+      <div><h1>DeviceDock</h1><p class="tagline">Android and Apple development devices, one click away from your Mac menu bar.</p></div>
+    </header>
+    <nav aria-label="Page sections"><a href="#support">Support</a><a href="#requirements">Requirements</a><a href="#privacy">Privacy</a></nav>
+
+    <section id="support">
+      <h2>Support</h2>
+      <p>Need help with DeviceDock? Email <a href="mailto:crumbdev.team@gmail.com">crumbdev.team@gmail.com</a>. Include your macOS version and the action you were trying to complete.</p>
+      <h3>Android devices</h3>
+      <p>Install Android SDK Platform Tools and the Android Emulator. For wireless pairing, enable Wireless debugging on Android 11 or later and place the Mac and device on the same local network.</p>
+      <h3>Apple simulators</h3>
+      <p>Install Xcode and at least one simulator runtime. DeviceDock uses the development tools already installed on your Mac.</p>
+    </section>
+
+    <section id="requirements">
+      <h2>System requirements</h2>
+      <ul><li>macOS 13 or later</li><li>Xcode for Apple simulator features</li><li>Android SDK Emulator and Platform Tools for Android features</li></ul>
+    </section>
+
+    <section id="privacy">
+      <h2>Privacy Policy</h2>
+      <p><strong>Effective date: October 26, 2026</strong></p>
+      <p>DeviceDock does not collect, sell, share, or transmit personal data to the developer or to advertising or analytics services.</p>
+      <h3>Local device information</h3>
+      <p>The app reads device names, identifiers, runtime versions, connection status, and local network discovery results from developer tools installed on your Mac. This information is processed locally to display and manage your devices.</p>
+      <h3>Wireless pairing</h3>
+      <p>Android pairing addresses and pairing codes are sent directly to the locally installed Android Debug Bridge. DeviceDock does not store pairing codes.</p>
+      <h3>Network access</h3>
+      <p>Local network access is used only to discover and connect to development devices you choose to manage. DeviceDock does not operate a remote data-collection service.</p>
+      <h3>Contact</h3>
+      <p>Questions about this policy may be sent to <a href="mailto:crumbdev.team@gmail.com">crumbdev.team@gmail.com</a>.</p>
+    </section>
+    <footer>© 2026 IENG PHO. DeviceDock is an independent developer utility.</footer>
+  </main>
+</body>
+</html>
